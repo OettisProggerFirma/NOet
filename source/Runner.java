@@ -8,7 +8,7 @@ public class Runner {
 //        toDo: Löschen, weil Testfall
         Notiz testNotiz = new Notiz("Titel 1",3,"Dies ist der Testtext");
         NotizAnzeige anzeige=new NotizAnzeige();
-        anzeige.zeigeNotiz(testNotiz);
+        anzeige.zeigeNotiz(testNotiz.getTitel(),testNotiz.getPrioritaet(),testNotiz.getText());
 
         anzeige.anzeigeLeeren();
 

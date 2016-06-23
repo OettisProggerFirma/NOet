@@ -16,7 +16,7 @@ public class NotizAnzeige {
     public NotizAnzeige() {
     }
 
-    public JPanel notizErstellen(String titel, Integer prio, String textFeld) {
+    public JPanel zeigeNotiz(String titel, Integer prio, String textFeld) {
 
         this.titel = new JTextField(50);
         this.titel.setText(titel);
@@ -35,12 +35,12 @@ public class NotizAnzeige {
 
     return this.notiz;
     }
-
-    public void zeigeNotiz(Notiz n) {
-        notizErstellen(n.getTitel().toString(), n.getPrioritaet(), n.getText().toString());
-    }
+//
+//    public void zeigeNotiz(Notiz n) {
+//        notizErstellen(n.getTitel().toString(), n.getPrioritaet(), n.getText().toString());
+//    }
 
     public void anzeigeLeeren(){
-        this.notiz.add(notizErstellen("", 0, ""));
+        this.notiz.add(zeigeNotiz("", 0, ""));
     }
 }
