@@ -1,34 +1,33 @@
-import javax.swing.*;
 import java.time.LocalDateTime;
 
 /**
  * Created by doetken on 23.06.2016.
  */
 public class Notiz {
-    private final JTextField titel;
-    private final JTextField text;
+    private final String titel;
+    private final String text;
     private final int prioritaet;
     private final LocalDateTime zeit;
 
-    public Notiz(JTextField titel, JTextField text, int prioritaet) {
+    public Notiz(String titel, int prioritaet, String text) {
         this.titel = titel;
         this.text = text;
         this.prioritaet = prioritaet;
         this.zeit = LocalDateTime.now();
     }
 
-    public Notiz(JTextField titel, JTextField text) {
+    public Notiz(String titel, String text) {
         this.titel = titel;
         this.text = text;
         this.zeit = LocalDateTime.now();
         this.prioritaet = 1;
     }
 
-    public JTextField getTitel() {
+    public String getTitel() {
         return titel;
     }
 
-    public JTextField getText() {
+    public String getText() {
         return text;
     }
 
