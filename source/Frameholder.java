@@ -7,9 +7,7 @@ public class Frameholder {
     public Frameholder() {
         JFrame frame = new JFrame();
 
-        NotizAnzeige anzeige=new NotizAnzeige();
 
-        frame.add(anzeige.zeigeNotiz);
 
         frame.pack();
         frame.setLocationRelativeTo(null);
